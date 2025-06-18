@@ -2,27 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio - Muhammad Nur</title>
+  <title>My Portfolio - matnor592</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; margin: 2em; }
-    h1 { color: #2d6cdf; }
-    .project { margin-bottom: 1.5em; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #2b79e3 30%, #21c6bd 100%);
+      color: #fff;
+      padding: 2rem 0 1.5rem 0;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(43,121,227,0.08);
+    }
+    header h1 {
+      margin: 0 0 0.25em 0;
+      font-size: 2.4em;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.14em;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(30,90,160,0.06);
+      padding: 1.5rem;
+      transition: transform .12s, box-shadow .12s;
+    }
+    .project-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 6px 24px rgba(43,121,227,0.13);
+    }
+    .project-title {
+      margin: 0 0 0.6em 0;
+      font-size: 1.25em;
+      color: #2b79e3;
+    }
+    .project-desc {
+      margin: 0 0 1em 0;
+      font-size: 1em;
+      color: #444;
+    }
+    .project-link {
+      display: inline-block;
+      background: #2b79e3;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5em 1.1em;
+      border-radius: 6px;
+      font-size: 0.97em;
+      font-weight: 500;
+      transition: background 0.14s;
+    }
+    .project-link:hover {
+      background: #21c6bd;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.45em; }
+      .container { padding: 0 0.4rem; }
+      .projects-grid { gap: 1rem; }
+      .project-card { padding: 1rem; }
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Portfolio</h1>
-  <p>Hi! I'm Muhammad Nur. Here's a showcase of my projects:</p>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Hi! I'm Muhammad Nur. Welcome to my portfolio—here are some of my assigned projects:</p>
+  </header>
 
-  <div class="project">
-    <h2>Project 1</h2>
-    <p>Description of your project. <a href="https://github.com/matnor592/project1">GitHub Link</a></p>
+  <div class="container">
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-title">Customer Churn Rate Business Analytics</div>
+        <div class="project-desc">This is a simple business analytics study analyzing the customer churn rate of a telecommunication company.</div>
+        <a class="project-link" href="https://github.com/matnor592/customerchurn" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Video Game Sales Analysis</div>
+        <div class="project-desc">This is an analysis on video game sales using visual representations and business intelligence tools.</div>
+        <a class="project-link" href="https://github.com/matnor592/vgsales" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <div class="project-title">EduGlobe: Earth Science Learning through Augmented Reality</div>
+        <div class="project-desc">This is a mobile AR application designed and developed for my final year project.</div>
+        <a class="project-link" href="https://github.com/matnor592/eduglobe" target="_blank">View on GitHub</a>
+      </div>
+    </div>
   </div>
-
-  <div class="project">
-    <h2>Project 2</h2>
-    <p>Description of your project. <a href="https://github.com/matnor592/project2">GitHub Link</a></p>
-  </div>
-
-  <!-- Add more projects as needed -->
 </body>
 </html>
