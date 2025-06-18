@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <title>Muhammad Nur - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -14,33 +14,43 @@
     .header {
       background: linear-gradient(90deg, #2b79e3 30%, #21c6bd 100%);
       color: #fff;
-      padding: 2.5rem 0 2rem 0;
+      padding-top: 3.5rem;
+      padding-bottom: 2.3rem;
       text-align: center;
       box-shadow: 0 2px 12px rgba(43,121,227,0.08);
       position: relative;
     }
+    .avatar-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+    }
     .avatar {
-    width: 110px;
-      height: 110px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       border: 4px solid #fff;
       object-fit: cover;
-      margin-top: 1.2rem;    /* Changed from negative to positive margin */
-      box-shadow: 0 0 0 4px #21c6bd55;
+      box-shadow: 0 4px 20px rgba(30,90,160,0.18);
+      background: #fff;
     }
     .header h1 {
-      margin: 0.5em 0 0.15em 0;
-      font-size: 2.4em;
+      margin: 0.7em 0 0.2em 0;
+      font-size: 2.7em;
       letter-spacing: 1px;
+      font-weight: bold;
+      line-height: 1.1;
     }
     .header p {
-      margin: 0 0 0.5em 0;
-      font-size: 1.14em;
+      margin: 0 0 1em 0;
+      font-size: 1.16em;
       font-weight: 300;
       letter-spacing: 0.3px;
     }
     .social-links {
-      margin: 1.2em 0 0 0;
+      margin: 1.25em 0 0 0;
       display: flex;
       justify-content: center;
       gap: 2em;
@@ -48,67 +58,74 @@
     .social-links a {
       color: #fff;
       text-decoration: none;
-      font-size: 1.5em;
+      font-size: 1.7em;
       transition: color 0.14s;
       display: inline-flex;
       align-items: center;
     }
     .social-links a:hover {
-      color: #222;
+      color: #21c6bd;
     }
     .container {
-      max-width: 900px;
+      max-width: 1150px;
       margin: 2.5rem auto;
       padding: 0 1.7rem;
     }
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-      margin-top: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 2.2rem;
+      margin-top: 2.2rem;
     }
     .project-card {
       background: #fff;
-      border-radius: 13px;
-      box-shadow: 0 2px 8px rgba(30,90,160,0.07);
-      padding: 1.6rem;
-      transition: transform .12s, box-shadow .12s;
+      border-radius: 18px;
+      box-shadow: 0 2px 14px rgba(30,90,160,0.09);
+      padding: 1.75rem 1.5rem 1.3rem 1.5rem;
+      transition: transform 0.12s, box-shadow 0.12s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .project-card:hover {
-      transform: translateY(-8px) scale(1.03);
-      box-shadow: 0 6px 24px rgba(43,121,227,0.13);
+      transform: translateY(-7px) scale(1.025);
+      box-shadow: 0 8px 28px rgba(43,121,227,0.16);
     }
     .project-title {
-      margin: 0 0 0.6em 0;
-      font-size: 1.25em;
+      margin: 0 0 0.55em 0;
+      font-size: 1.24em;
       color: #2b79e3;
+      font-weight: 600;
+      line-height: 1.2;
     }
     .project-desc {
-      margin: 0 0 1em 0;
-      font-size: 1em;
+      margin: 0 0 1.2em 0;
+      font-size: 1.04em;
       color: #444;
+      flex: 1;
     }
     .project-link {
       display: inline-block;
       background: #2b79e3;
       color: #fff;
       text-decoration: none;
-      padding: 0.5em 1.1em;
-      border-radius: 6px;
-      font-size: 0.97em;
+      padding: 0.48em 1.17em;
+      border-radius: 7px;
+      font-size: 1em;
       font-weight: 500;
       transition: background 0.14s;
-      margin-top: 0.4em;
+      margin-top: 0.55em;
+      box-shadow: 0 1px 4px rgba(43,121,227,0.09);
     }
     .project-link:hover {
       background: #21c6bd;
     }
-    @media (max-width: 600px) {
-      .header h1 { font-size: 1.45em; }
-      .container { padding: 0 0.4rem; }
+    @media (max-width: 700px) {
+      .container { padding: 0 0.5rem; }
+      .header h1 { font-size: 1.5em; }
+      .avatar { width: 85px; height: 85px; }
       .projects-grid { gap: 1rem; }
       .project-card { padding: 1rem; }
-      .avatar { width: 80px; height: 80px; }
     }
   </style>
   <!-- Font Awesome for social icons -->
